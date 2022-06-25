@@ -14,7 +14,7 @@ const BarTop =() =>{
               <small>+222 222 222</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center">
-              <a class="btn btn-sm-square bg-white text-danger me-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <button class="btn btn-sm-square bg-white text-danger me-1" href=""><i class="fab fa-facebook-f"></i></button>
               <a class="btn btn-sm-square bg-white text-danger me-1" href=""><i class="fab fa-twitter"></i></a>
               <a class="btn btn-sm-square bg-white text-danger me-1" href=""><i class="fab fa-linkedin-in"></i></a>
               <a class="btn btn-sm-square bg-white text-danger me-0" href=""><i class="fab fa-instagram"></i></a>
