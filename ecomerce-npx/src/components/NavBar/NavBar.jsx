@@ -1,3 +1,4 @@
+import imagenes from "../img/imagenes";
 const NavBar = () => {
   return (
     <>
@@ -6,7 +7,7 @@ const NavBar = () => {
           href="index.html"
           class="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
-          <img src="./components/img/logo.jpg" alt="logo" />
+          <img src={imagenes.img1} alt="logo" />
         </a>
         <button
           type="button"

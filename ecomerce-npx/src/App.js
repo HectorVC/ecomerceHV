@@ -9,6 +9,8 @@ function App() {
     <>
     <BarTop/>
     <NavBar/>
+  
+     
     <ItemListContainer/>
     </>
   )
