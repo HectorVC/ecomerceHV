@@ -1,5 +1,13 @@
 import imagenes from "../img/imagenes";
+import { useState } from "react";
+
+
 const ItemListContainer = () => {
+const [count,setCount]= useState(0)
+const aumentar =() => {
+setCount(count +1)
+console.log(count)
+}
     return (
      <>
       <div class="container-fluid p-0 pb-5">
@@ -22,7 +30,17 @@ const ItemListContainer = () => {
       </div>
     </div>
   </div>
-     </>
+    
+<div>
+{count}
+<button onClick={aumentar}>"Aumentar numero"</button>
+
+
+</div>
+
+
+
+ </>
         );
  };
  
