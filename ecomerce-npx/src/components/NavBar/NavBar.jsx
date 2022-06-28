@@ -1,4 +1,6 @@
-import imagenes from "../img/imagenes";
+import CardWidget from "../container/CardWidget/CardWidget";
+// import imagenes from "../img/imagenes";
+
 const NavBar = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const NavBar = () => {
           href="index.html"
           class="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
-          <img src={imagenes.img1} alt="logo" />
+          <img src={CardWidget.img1} alt="logo" />
         </a>
         <button
           type="button"

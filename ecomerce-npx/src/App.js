@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import ItemListContainer from "./components/container/ItemListContainer";
 import Formulario from "./components/Formulario/Formulario";
 
-const objStyle = { color: "white", backgroundColor: "black", fontSize: 50 };
+
 function App() {
   return (
     <>

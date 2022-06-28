@@ -1,13 +1,28 @@
 import imagenes from "../img/imagenes";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
 const [count,setCount]= useState(0)
-const aumentar =() => {
+const [date,setDate]= useState(Date())
+
+
+const aumentar = () => {
 setCount(count +1)
-console.log(count)
+setDate(Date())
 }
+
+useEffect(()=>{
+console.log('se ejecuta siempre al cargar montado')
+})
+
+useEffect(()=>{
+console.log('se ejecuta 1 sola vez')
+},[])
+
+console.log('ItemListContainer')
+console.log(count)
+
     return (
      <>
       <div class="container-fluid p-0 pb-5">
@@ -32,6 +47,7 @@ console.log(count)
   </div>
     
 <div>
+  {date}
 {count}
 <button onClick={aumentar}>"Aumentar numero"</button>
 
@@ -41,8 +57,9 @@ console.log(count)
 
 
  </>
+ 
         );
- };
+    };
  
  export default ItemListContainer;
  
