@@ -6,6 +6,7 @@ import About from "./components/About/About";
 
 import ItemListContainer from "./components/container/ItemListContainer";
 import Formulario from "./components/Formulario/Formulario";
+import ItemListContainerD from "./components/container/ItemListContainerD";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <BarTop />
       <NavBar />
       <ItemListContainer greeting={"Hola soy ItemListcontainer"} />
+      <ItemListContainerD greeting={""} />
       <About />
       <div>
         
