@@ -1,5 +1,5 @@
 let productos = [
-{id:'1',sabor:'Oreo',precio:'15',stock:'31',img:src},
+{id:'1',sabor:'Oreo',precio:'15',stock:'31',},
 {id:'2',sabor:'Chocolate',precio:'15',stock:'12',},
 {id:'3',sabor:'Rompope',precio:'20',stock:'25',},
 {id:'4',sabor:'Cajeta',precio:'15',stock:'28',},
