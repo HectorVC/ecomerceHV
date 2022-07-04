@@ -20,7 +20,7 @@ const ItemListContainer = ({ greeting }) => {
         productos.map((prod) => (
           <div key={prod.id} className="card-group">
             <div className="card">
-              <img src="" class="card-img-top" alt="..." />
+              <img src={prod.img} className="card-img-top w-50" alt={prod.sabor} />
               <div className="card-body">
                 <h5 className="card-title">{prod.sabor}</h5>
                 <p className="card-text">

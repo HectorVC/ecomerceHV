@@ -1,0 +1,7 @@
+[
+{"id":"1","sabor":"Oreo","precio":"15","stock":"31"},
+{"id":"2","sabor":"Chocolate","precio":"15","stock":"35"},
+{"id":"3","sabor":"Rompope","precio":"18","stock":"21"},
+{"id":"4","sabor":"Cajeta","precio":"18","stock":"17"},
+{"id":"5","sabor":"Coco","precio":"15","stock":"29"}
+]
