@@ -1,8 +1,8 @@
 let productos = [
-{id:'1',sabor:'Oreo',precio:'15',stock:'31',img:'data:container/img/6.jpg'},
-{id:'2',sabor:'Chocolate',precio:'15',stock:'12',},
-{id:'3',sabor:'Rompope',precio:'20',stock:'25',},
-{id:'4',sabor:'Cajeta',precio:'15',stock:'28',},
+{id:'1',sabor:'Oreo',precio:'15',base:'Leche',img:'/img/6.jpg'},
+{id:'2',sabor:'Chocolate',precio:'15',base:'Leche',},
+{id:'3',sabor:'Rompope',precio:'20',base:'Agua',},
+{id:'4',sabor:'Coco',precio:'15',base:'Agua',},
 
 ];
 

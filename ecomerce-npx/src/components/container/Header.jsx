@@ -2,7 +2,7 @@ import imagenes from "../img/imagenes";
 import { useState,useEffect } from "react";
 
 
-const ItemListContainerD = ({greeting}) => {
+const Header = ({greeting}) => {
 const [count,setCount]= useState(0)
 const [date,setDate]= useState(Date())
 
@@ -61,5 +61,5 @@ console.log(count)
         );
     };
  
- export default ItemListContainerD;
+ export default Header;
  

@@ -18,6 +18,7 @@ const ItemListContainer = ({ greeting }) => {
         <h2>Cargando .... </h2>
       ) : (
         productos.map((prod) => (
+
           <div key={prod.id} className="card-group">
             <div className="card">
               <img src={prod.img} className="card-img-top w-50" alt={prod.sabor} />
@@ -27,7 +28,7 @@ const ItemListContainer = ({ greeting }) => {
                   Boli artesanal sabor {prod.sabor} 100 % natural
                 </p>
                 <p className="card-text">
-                  <small className="text-muted">precio untario ${prod.precio}</small>
+                  <a href="#" class="btn btn-primary">Detalles</a>
                 </p>
               </div>
             </div>
