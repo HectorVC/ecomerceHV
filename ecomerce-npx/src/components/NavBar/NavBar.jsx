@@ -22,6 +22,11 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
 
+          <a href="/Leche" class="nav-item nav-link">Leche</a>
+
+          
+          <a href="/Agua" class="nav-item nav-link">Agua</a>
+
           </div>
           <a
             href="Cart"

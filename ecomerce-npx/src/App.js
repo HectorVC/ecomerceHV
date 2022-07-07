@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import BarTop from "./components/BarTop/BarTop";
 import About from "./components/About/About";
@@ -18,8 +18,9 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer greeting={"Hola soy ItemListcontainer"} /> } />
-           <Route path="/detalle" element={<ItemDetail/> } />
+           <Route path="/detalle/:id" element={<ItemDetail/> } />
            <Route path="/cart" element={<Cart/> } />
+           <Route path="*" element={ <Navigate to = '/error404' />} />
           {/* <Header />
           <About />
           <Formulario /> */}
