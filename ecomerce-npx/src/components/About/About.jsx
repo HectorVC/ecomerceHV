@@ -1,4 +1,4 @@
-import imagenes from "../img/imagenes";
+import imagenes from "../container/img/imagenes";
 
 const About =() =>{
     return(

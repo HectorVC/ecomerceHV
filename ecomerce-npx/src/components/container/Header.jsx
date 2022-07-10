@@ -1,4 +1,4 @@
-import imagenes from "../img/imagenes";
+import imagenes from "./img/imagenes";
 import { useState,useEffect } from "react";
 
 
