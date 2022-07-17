@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gFetch } from "./helpers/getFetch";
+import "./ItemDetail/ItemListContainer.css";
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -19,13 +20,9 @@ const ItemListContainer = ({ greeting }) => {
         <h2>Cargando .... </h2>
       ) : (
         productos.map((prod) => (
-          <div key={prod.id} className="card-group">
-            <div className="card text-center">
-              <img
-                src={prod.img}
-                className="card-img-top w-50"
-                alt={prod.sabor}
-              />
+          <div className="col">
+                     <div key={prod.id} className="card text-center h-100">
+              <img src={prod.img} className="card-img-top w-50" alt={prod.sabor}/>
               <div className="card-body">
                 <h5 className="card-title">{prod.sabor}</h5>
                 <p className="card-text">
@@ -33,9 +30,9 @@ const ItemListContainer = ({ greeting }) => {
                 </p>
                 <p className="card-text">
                   <Link to={`/detalle/${prod.id}`}>
-                    <a class="btn btn-primary">
+                    <btn className="btn btn-primary">
                       Detalles
-                    </a>
+                    </btn>
                   </Link>
                 </p>
               </div>
