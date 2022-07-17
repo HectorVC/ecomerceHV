@@ -1,7 +1,7 @@
 import CardWidget from "../container/CardWidget/CardWidget";
 // import imagenes from "../img/imagenes";
 
-const NavBar = () => {
+const NavBar = ({items}) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -32,7 +32,7 @@ const NavBar = () => {
             href="Cart"
             className="btn btn-danger py-4 px-lg-5 d-none d-lg-block"
           >
-           Carrito
+           Carrito {items.length}
           </a>
         </div>
       </nav>
