@@ -8,6 +8,7 @@ import Cart from "./components/container/Cart/Cart";
 import ItemDetail from "./components/container/ItemDetail/ItemDetail";
 import ItemList from "./components/container/ItemList/ItemList";
 import React , {useState} from "react";
+import { ItemsProvider } from "./components/ItemsContext";
 
 const initialState = [
   { id: 45454, name: "Keyboard Dell", price: 20 },
@@ -23,6 +24,7 @@ const App = () => {
   const [items, setItems] = useState(initialState);
 
   return (
+    <ItemsProvider>
     <BrowserRouter>
       <div>
         <BarTop />
@@ -45,6 +47,7 @@ const App = () => {
         </div>
       </div>
     </BrowserRouter>
+    </ItemsProvider>
   );
 };
 
