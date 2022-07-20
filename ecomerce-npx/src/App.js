@@ -9,6 +9,7 @@ import ItemDetail from "./components/container/ItemDetail/ItemDetail";
 import ItemList from "./components/container/ItemList/ItemList";
 import React , {useState} from "react";
 import { ItemsProvider } from "./components/ItemsContext";
+import ItemCard from "./components/container/ItemCard/ItemCard";
 
 const initialState = [
   { id: 45454, name: "Keyboard Dell", price: 20 },

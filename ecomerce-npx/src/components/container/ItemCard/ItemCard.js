@@ -1,11 +1,16 @@
-import React from"react";
+
+import { useContext } from "react";
+import { ItemsContext } from "../../ItemsContext";
+
 import Button from "../Button/Button";
-import ItemListContainer from "../ItemListContainer";
 
 
 
 
-const ItemCard = ({ items }) => {
+
+const ItemCard = ({items}) => {
+  // const [items, setItems] = useContext (ItemsContext);
+  
   return (
     <div
       style={{
@@ -15,9 +20,9 @@ const ItemCard = ({ items }) => {
         border: "2px solid black",
         borderRadius: 4
       }}> 
-      <h1>ItemCard</h1>
+      <h1>{items.name}</h1>
       <ul>
-        <li style={{listStyle:"none"}}>{items.name}</li>
+        <li style={{listStyle:"none"}}>{items.des}</li>
         <li style={{listStyle:"none"}}>$ {items.price}</li>
         <Button items={items}/>
     
